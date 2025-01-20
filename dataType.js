@@ -128,20 +128,38 @@
 
 //task
 
-function calculator(x, y, op) {
-  switch (op) {
-    case "+":
-      return x + y;
-    case "-":
-      return x - y;
-    case "*":
-      return x * y;
-    case "/":
-      return x / y;
-    default:
-      console.log("Not available operator");
-  }
+// function calculator(x, y, op) {
+//   switch (op) {
+//     case "+":
+//       return x + y;
+//     case "-":
+//       return x - y;
+//     case "*":
+//       return x * y;
+//     case "/":
+//       return x / y;
+//     default:
+//       console.log("Not available operator");
+//   }
+// }
+
+// let res = calculator(5, 7, "*");
+// console.log("Res : ", res);
+
+//for in and for of
+//for in : object ko keys haru ma looping garne kam garxa , hamlai index value pani dinxa
+//for of : siddhai values nai dinxa
+
+const students = {
+  name: "Jhone",
+  age: 25,
+  marks: 90,
+};
+
+for (let key in students) {
+  console.log("key :", key, "value :", students[key]);
 }
 
-let res = calculator(5, 7, "*");
-console.log("Res : ", res);
+for (let x in "students") {
+  console.log("x : ", x);
+}
